@@ -1,0 +1,10 @@
+@import './../../assets/styles/color';
+@import './../../assets/styles/mixin';
+
+.choice-span-primary {
+  @include radius-span($theme-primary);
+}
+
+.choice-span-danger {
+  @include radius-span($theme-danger);
+}

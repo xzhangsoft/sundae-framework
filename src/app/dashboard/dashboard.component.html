@@ -1,0 +1,21 @@
+<div class="display-flex-column">
+  <div class="display-flex-column align-center">
+    <ion-button [color]="getColor()">button</ion-button>
+    <ion-checkbox [color]="getColor()" class="margin-xs"></ion-checkbox>
+    <div [ngClass]="getTheme()" class="margin-xs width100vw">show user theme</div>
+  </div>
+
+  <div style="height: 10vh"></div>
+
+  <div class="display-flex-column align-center">
+    <div class="">
+      <ion-button color="primary" class="display-inline-block choice-span-primary" (click)="switchToPrimary('primary')">
+      </ion-button>
+      <ion-button color="danger" class="display-inline-block choice-span-danger" (click)="switchToPrimary('danger')">
+      </ion-button>
+    </div>
+    <ion-button [color]="getSwitchedColor()">button</ion-button>
+    <ion-checkbox [color]="getSwitchedColor()" class="margin-xs"></ion-checkbox>
+    <div [ngClass]="getSwitchedTheme()" class="margin-xs width100vw">select theme</div>
+  </div>
+</div>

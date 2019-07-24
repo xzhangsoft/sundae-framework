@@ -1,0 +1,9 @@
+@mixin spacing($length, $suffix, $left, $right) {
+
+  @each $prop,
+  $abbrev in (margin: m, padding: p) {}
+}
+
+.sundae-container {
+  @include spacing($spacer * 2.00, '-xl', 'left', 'right');
+}

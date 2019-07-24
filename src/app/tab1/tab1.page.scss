@@ -1,0 +1,35 @@
+@import './../../assets/styles/color';
+@import './../../assets/styles/mixin';
+
+
+.theme-blue-test {
+  height: 10vh;
+  width: 100vw;
+  @include app-theme-blue($theme-primary, $theme-white)
+}
+
+.search-bar {
+  background-color: $theme-danger;
+
+  ::ng-deep ion-searchbar .searchbar-input-container input {
+    border-radius: 10px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  ::ng-deep ion-searchbar .searchbar-input-container ion-icon {
+    top: 5px;
+  }
+}
+
+ion-content {
+  .slider {
+    height: 200px;
+
+    ion-img {
+      object-fit: initial;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

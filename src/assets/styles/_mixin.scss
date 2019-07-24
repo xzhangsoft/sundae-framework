@@ -1,0 +1,13 @@
+@mixin app-theme-blue($background-blue, $font-white) {
+  color: $font-white;
+  background-color: $background-blue;
+}
+
+@mixin radius-span($bg-color) {
+  width: 45px;
+  height: 25px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: $bg-color;
+  color: #FFFFFF;
+}

@@ -1,0 +1,39 @@
+.display-flex-row {
+  display: flex;
+  flex-direction: row wrap
+}
+
+.display-flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse
+}
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+  align-content: center;
+}
+
+.vertical-center {
+  justify-content: center;
+}
+
+.height100vh {
+  height: 100vh;
+}
+
+.width100vw {
+  width: 100vw;
+}

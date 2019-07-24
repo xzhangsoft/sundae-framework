@@ -1,0 +1,11 @@
+@import './color';
+
+.app-theme-danger {
+  background-color: $theme-danger;
+  color: $theme-white
+}
+
+.app-theme-primary {
+  background-color: $theme-primary;
+  color: $theme-white
+}

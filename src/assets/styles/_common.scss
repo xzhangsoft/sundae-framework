@@ -1,0 +1,25 @@
+@import './color';
+
+.margin-xs {
+  margin: 10px;
+}
+
+.margin-md {
+  margin: 20px;
+}
+
+.margin-lg {
+  margin: 30px;
+}
+
+.padding-xs {
+  padding: 10px;
+}
+
+.header-title {
+  color: $theme-white;
+}
+
+.logo {
+  width: 20px;
+}
