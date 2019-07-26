@@ -1,19 +1,11 @@
-.position-absolute {
-  position: absolute;
-}
+$positions: static,
+relative,
+absolute,
+fixed,
+sticky;
 
-.position-relative {
-  position: relative;
-}
-
-.position-static {
-  position: static;
-}
-
-.position-sticky {
-  position: sticky;
-}
-
-.position-fixed {
-  position: fixed;
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position !important;
+  }
 }

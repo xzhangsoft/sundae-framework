@@ -6,11 +6,11 @@
 <ion-content>
 
   <ion-slides class="slider" pager="false" [options]="slideOpts" loop="true" autoplay="1000">
-    <ion-slide *ngFor="let img of newsList">
+    <ion-slide *ngFor="let img of recommandNews.list">
       <ion-img class="slide-image" [src]="img"></ion-img>
     </ion-slide>
   </ion-slides>
-  <ng-container *ngFor="let card of cardList">
+  <ng-container *ngFor="let card of recommandEntry.list">
     <app-ion-card></app-ion-card>
   </ng-container>
 </ion-content>

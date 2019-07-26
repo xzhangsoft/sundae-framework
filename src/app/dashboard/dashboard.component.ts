@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { SimplePage } from '../core/simplePage';
 import { AuthServiceService } from '../core/auth-service.service';
 import { UserState } from '../core/userState';
+import { BaseInjects } from '../core/BaseInjects';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,16 +12,15 @@ import { UserState } from '../core/userState';
 })
 export class DashboardComponent extends SimplePage implements OnInit {
 
-  constructor(protected authServiceService: AuthServiceService,
-    protected userState: UserState,
-    protected themeSerice: ThemeService) {
-    super(authServiceService, userState, themeSerice);
+  constructor(public inject: BaseInjects,
+    public themeService: ThemeService) {
+    super(inject);
   }
 
   ngOnInit() { }
 
   switchToPrimary(targetTheme) {
-    this.themeSerice.switchTheme(targetTheme);
+    this.themeService.switchTheme(targetTheme);
   }
 
 }

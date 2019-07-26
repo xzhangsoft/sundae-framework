@@ -1,0 +1,10 @@
+{
+  "meta": {},
+  "header": {},
+  "body": {
+    "list": ["./../assets/images/banner-1.jpg",
+      "./../assets/images/banner-2.jpg",
+      "./../assets/images/slide-3.png"
+    ]
+  }
+}

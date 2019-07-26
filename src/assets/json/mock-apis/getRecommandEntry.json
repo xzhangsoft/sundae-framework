@@ -1,0 +1,27 @@
+{
+  "meta": {},
+  "header": {},
+  "body": {
+    "list": [{
+        "type": "dry",
+        "name": "paper",
+        "content": "..."
+      },
+      {
+        "type": "dry",
+        "name": "paper",
+        "content": "..."
+      },
+      {
+        "type": "dry",
+        "name": "paper",
+        "content": "..."
+      },
+      {
+        "type": "dry",
+        "name": "paper",
+        "content": "..."
+      }
+    ]
+  }
+}

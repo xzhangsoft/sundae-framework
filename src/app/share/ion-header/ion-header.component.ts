@@ -1,8 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SimplePage } from 'src/app/core/simplePage';
-import { AuthServiceService } from 'src/app/core/auth-service.service';
-import { UserState } from 'src/app/core/userState';
-import { ThemeService } from 'src/app/core/theme.service';
+import { BaseInjects } from 'src/app/core/BaseInjects';
 
 @Component({
   selector: 'app-ion-header',
@@ -13,10 +11,8 @@ export class IonHeaderComponent extends SimplePage implements OnInit {
 
   @Input() title: any;
 
-  constructor(protected authServiceService: AuthServiceService,
-    protected userState: UserState,
-    protected themeSerice: ThemeService) {
-    super(authServiceService, userState, themeSerice);
+  constructor(public inject: BaseInjects) {
+    super(inject);
   }
 
   ngOnInit() { }

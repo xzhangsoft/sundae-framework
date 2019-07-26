@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { ShareModule } from './share/share.module';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BaseInjects } from './core/BaseInjects';
 
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, DashboardComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), HttpClientModule, AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,

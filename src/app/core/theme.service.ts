@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { observable, computed, autorun } from "mobx";
+import { observable, computed } from "mobx";
 
 @Injectable({
   providedIn: 'root'
@@ -15,17 +15,9 @@ export class ThemeService {
     return this.state.theme;
   }
 
-  // @computed get theme1() {
-  //   return this.theme.get();
-  // }
-
   mode: string;
 
-  constructor() {
-    // autorun(() => {
-    //   console.log(this.theme.get());
-    // });
-  }
+  constructor() { }
 
   switchTheme(targetTheme) {
     this.state.theme.set(targetTheme);

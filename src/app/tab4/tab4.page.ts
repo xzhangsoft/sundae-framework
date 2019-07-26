@@ -1,8 +1,6 @@
-import { AuthServiceService } from './../core/auth-service.service';
 import { Component } from '@angular/core';
 import { SimplePage } from '../core/simplePage';
-import { UserState } from '../core/userState';
-import { ThemeService } from '../core/theme.service';
+import { BaseInjects } from '../core/BaseInjects';
 
 @Component({
   selector: 'app-tab4',
@@ -11,10 +9,8 @@ import { ThemeService } from '../core/theme.service';
 })
 export class Tab4Page extends SimplePage {
 
-  constructor(protected authServiceService: AuthServiceService,
-    protected userState: UserState,
-    protected themeSerice: ThemeService) {
-    super(authServiceService, userState, themeSerice);
+  constructor(public inject: BaseInjects) {
+    super(inject);
   }
 
 }

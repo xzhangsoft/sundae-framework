@@ -1,9 +1,44 @@
+@import './../../theme/variables.scss';
+
 @mixin spacing($length, $suffix, $left, $right) {
 
   @each $prop,
-  $abbrev in (margin: m, padding: p) {}
+  $abbrev in (margin: m, padding: p) {
+    .#{$abbrev}-xy#{$suffix} {
+      #{$prop}: $length !important;
+    }
+
+    .#{$abbrev}-x#{$suffix} {
+      #{$prop}-left: $length !important;
+      #{$prop}-right: $length !important;
+    }
+
+    .#{$abbrev}-y#{$suffix} {
+      #{$prop}-top: $length !important;
+      #{$prop}-bottom: $length !important;
+    }
+
+    .#{$abbrev}-top#{$suffix} {
+      #{$prop}-top: $length !important;
+    }
+
+    .#{$abbrev}-bottom#{$suffix} {
+      #{$prop}-bottom: $length !important;
+    }
+
+    .#{$abbrev}-left#{$suffix} {
+      #{$prop}-left: $length !important;
+    }
+
+    .#{$abbrev}-right#{$suffix} {
+      #{$prop}-right: $length !important;
+    }
+  }
 }
 
 .sundae-container {
-  @include spacing($spacer * 2.00, '-xl', 'left', 'right');
+  @include spacing($spacer * 4.00, '-lg', 'left', 'right');
+  @include spacing($spacer * 2.00, '-md', 'left', 'right');
+  @include spacing($spacer * 1.00, '-sm', 'left', 'right');
+  @include spacing($spacer * 0.00, '', 'left', 'right');
 }
